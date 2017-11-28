@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageConverter", "ImageConverter.csproj", "{38A5E22F-2F8D-405B-B95E-273FDD4CD754}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galery", "Galery\Galery.csproj", "{4CB85FE1-56C4-4981-8E11-96ED22E4F704}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{38A5E22F-2F8D-405B-B95E-273FDD4CD754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A5E22F-2F8D-405B-B95E-273FDD4CD754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A5E22F-2F8D-405B-B95E-273FDD4CD754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB85FE1-56C4-4981-8E11-96ED22E4F704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB85FE1-56C4-4981-8E11-96ED22E4F704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB85FE1-56C4-4981-8E11-96ED22E4F704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB85FE1-56C4-4981-8E11-96ED22E4F704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
