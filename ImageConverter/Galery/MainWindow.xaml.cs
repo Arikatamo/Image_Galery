@@ -24,22 +24,32 @@ namespace Galery
         public MainWindow()
         {
             InitializeComponent();
-            DirectoryInfo dir = new DirectoryInfo(@"C:\Users\Arikatamo\Documents\Case\Нова папка\Hearts");
+            DirectoryInfo dir = new DirectoryInfo(@"C:\Users\user.STEP\Documents\Visual Studio 2017\Projects\New folder\");
             foreach (var item in dir.GetFiles())
             {
   
                 Image images = new Image();
-                images.Source = new BitmapImage(new Uri(@"C:\Users\Arikatamo\Documents\Case\Нова папка\Hearts\" + item));
-                images.RenderSize = new Size(100, 100);
+                images.Source = new BitmapImage(new Uri(@"C:\Users\user.STEP\Documents\Visual Studio 2017\Projects\New folder\" + item));
+                images.MaxHeight = 100;
+                images.MaxWidth = 100;
                 images.Margin = new Thickness(10, 10, 10, 10);
-                Image_Galery.Children.Add(images);
-   
+                Wrap.Background = Brushes.LightCoral;
+                Wrap.Children.Add(images);
+                Wrap.Margin = new Thickness(10, 10, 10, 10);
+              //  Image_Galery.Children.Add(images);
+
                }
         }
 
         private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
 
+        }
+
+        private void MetroWindow_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            Wrap.Width = this.Width - 50;
+            Wrap.Height = this.Height - 50;
         }
     }
 }
